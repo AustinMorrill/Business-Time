@@ -1,0 +1,181 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	background: rgba(231, 218, 183, 0.795);
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid rgb(0, 0, 0);
+	padding: .3em 0;
+	background: #7D7C7D;
+}
+
+.logo {
+	margin-left: 10%;
+	display: block;
+	margin-top: 10pt;
+
+}
+
+.logo a {
+	color: hsl(32, 100%, 60%);
+	text-decoration: none;
+}
+
+.nav {
+	margin: 1.5em 0 0 5%;
+	font-size: 1.2em;
+}
+
+header ul li {
+	display: inline;
+	padding: 0 1.4em 0 0;
+	font-size: 0.9em;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: rgb(255, 203, 30);
+}
+
+li a.active {
+	color: #000000;
+	border-bottom: 2px solid #000000;
+	font-weight: 300;
+}
+
+li a:hover {
+	color: #B6B6B6;
+}
+
+main {
+	height: 100%;
+	
+}
+
+img {
+	margin: 10pt;
+	width: 80%;
+	height: 20%;
+	align-self: center;
+	border: 3pt solid rgb(73, 73, 73);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20pt;
+	margin-right: 20pt;
+}
+
+/* .first {
+	padding: 20pt;
+	box-shadow: inset 5pt 5pt 50pt #000000;
+	height: 200pt;
+	 z-index: 1;
+} */
+
+.pictures {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	/* align-content: center; */
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3,
+p {
+	text-align: center;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+
+p {
+	font-size: 2em;
+	margin: 10pt;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+	.header-container {
+		text-align: center;
+				padding: 0;
+				margin: 0;
+	}
+
+	.logo {
+		margin-left: 0;
+	}
+
+	.nav {
+		margin-bottom: 4pt;
+	}
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.header-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	img {
+		width: 60%;
+	}
+
+	p {
+		margin-left: 40pt;
+		margin-right: 40pt
+	}
+
+	form {
+		margin-top: 20pt;
+		margin-left: 50pt;
+		margin-right: 50pt;
+		/* width: 400pt; */
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	.header-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	img {
+		width: 50%;
+		margin-top: 40pt;
+	}
+
+	p {
+		margin-left: 80pt;
+		margin-right: 80pt;
+	}
+
+	form {
+		margin-top: 40pt;
+		margin-left: 90pt;
+		margin-right: 90pt;
+		width: 500pt;
+	}
+}
